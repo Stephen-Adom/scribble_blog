@@ -106,8 +106,15 @@
   }
 }
 
-.p-tabview-title {
-  font-family: Poppins;
-  font-weight: 500;
-  font-size: 0.8rem;
+.p-tabview-nav li {
+  &.p-highlight .p-tabview-nav-link {
+    color: theme("colors.orange.600") !important;
+    border-color: theme("colors.orange.600") !important;
+  }
+
+  .p-tabview-nav-link .p-tabview-title {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
 }

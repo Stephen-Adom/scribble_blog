@@ -2,6 +2,10 @@
   ul {
     li {
       cursor: pointer;
+
+      &:hover svg {
+        color: theme("colors.orange.600");
+      }
     }
   }
 }
