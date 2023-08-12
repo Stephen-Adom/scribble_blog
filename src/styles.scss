@@ -1,0 +1,107 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+}
+
+@layer base {
+  html,
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@layer components {
+  label {
+    @apply mb-2 block;
+  }
+  .form-control {
+    @apply rounded-sm border border-gray-300 shadow-sm px-5 py-3 w-full bg-white focus:outline-none focus:border-orange-600 text-sm;
+  }
+
+  .form-group {
+    @apply mb-5;
+  }
+
+  .btn-custom {
+    @apply bg-orange-600 hover:bg-orange-700 focus:bg-orange-800 text-white px-10 py-3 rounded-sm font-semibold tracking-wider;
+  }
+
+  .btn-outline-custom {
+    @apply bg-white border-2 border-orange-700 px-7 py-2 rounded-full font-semibold tracking-wider text-gray-500;
+  }
+
+  .text-size {
+    @apply text-sm sm:text-sm md:text-lg lg:text-sm;
+  }
+
+  .glass-inner-container {
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .input-group {
+    @apply flex items-center;
+  }
+
+  .search-form .form-control {
+    @apply border-none bg-gray-700 text-white text-sm px-5 py-3 rounded-tl-sm rounded-bl-sm min-w-[300px] md:min-w-[300px] lg:min-w-[400px] focus:bg-gray-600 focus:outline-none focus:border-transparent outline-none;
+  }
+
+  .search-form .input-text {
+    @apply px-3 py-3 text-white bg-gray-700 rounded-tr-sm rounded-br-sm;
+  }
+
+  .btn-primary {
+    @apply flex items-center gap-1 px-5 py-2 text-sm text-white bg-orange-600 rounded-sm hover:bg-orange-700 focus:bg-orange-800;
+  }
+
+  .category-item {
+    @apply text-[0.8rem] text-gray-400 leading-tight;
+  }
+
+  .btn-badge {
+    @apply absolute z-10 px-4 py-2 text-xs rounded-sm bg-gray-300/80 top-3 left-3;
+  }
+
+  .share-icons .btn-icon {
+    @apply bg-gray-300/80;
+  }
+
+  #create-blog-form {
+    @apply mt-5;
+  }
+
+  #create-blog-form .form-group {
+    @apply mb-8;
+  }
+
+  #create-blog-form label {
+    @apply block mb-1 text-base font-medium text-gray-900;
+  }
+
+  #create-blog-form .form-control {
+    @apply block w-full px-5 py-3 text-sm bg-white border border-t-0 border-l-0 border-r-0 border-gray-300 h-14 focus:outline-none focus:border-b-orange-600 shadow-none;
+  }
+}
