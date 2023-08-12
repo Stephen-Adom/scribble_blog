@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{html,ts}",
-    "./node_modules/tw-elements/dist/js/**/*.js",
-  ],
+  content: ["./src/**/*.{html,ts}", "./node_modules/flowbite/**/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "orange-primary-1": "#ea580c",
+        "orange-primary-2": "#c2410c",
+      },
+    },
   },
-  plugins: [require("tw-elements/dist/plugin.cjs")],
+  plugins: [require("flowbite/plugin")],
 };

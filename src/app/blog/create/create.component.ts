@@ -1,10 +1,8 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import Quill from 'quill';
 import BlotFormatter from 'quill-blot-formatter/dist/BlotFormatter';
-import { Dropdown, initTE } from 'tw-elements';
 
 Quill.register('modules/blotFormatter', BlotFormatter);
-initTE({ Dropdown });
 
 @Component({
   selector: 'app-create',
