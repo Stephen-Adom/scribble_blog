@@ -3,7 +3,8 @@
     li {
       cursor: pointer;
 
-      &:hover svg {
+      &:hover svg,
+      &.active svg {
         color: theme("colors.orange.600");
       }
     }

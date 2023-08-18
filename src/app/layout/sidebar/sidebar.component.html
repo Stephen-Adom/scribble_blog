@@ -2,7 +2,11 @@
   class="sidebar fixed left-0 min-h-screen w-[6%] bg-gray-100 flex-col hidden sm:hidden md:flex"
 >
   <ul class="pl-0">
-    <li class="flex flex-col items-center py-4 gap-y-1">
+    <li
+      class="flex flex-col items-center py-4 gap-y-1"
+      [routerLink]="['/home']"
+      routerLinkActive="active"
+    >
       <span class="block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +26,11 @@
       <span class="block text-xs font-semibold">HOME</span>
     </li>
 
-    <li class="flex flex-col items-center py-4 gap-y-1">
+    <li
+      class="flex flex-col items-center py-4 gap-y-1"
+      [routerLink]="['/bookmarks']"
+      routerLinkActive="active"
+    >
       <span class="block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +50,11 @@
       <span class="block text-xs font-semibold">BOOKMARK</span>
     </li>
 
-    <li class="flex flex-col items-center py-4 gap-y-1">
+    <li
+      class="flex flex-col items-center py-4 gap-y-1"
+      [routerLink]="['/discover']"
+      routerLinkActive="active"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
