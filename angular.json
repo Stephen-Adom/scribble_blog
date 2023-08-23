@@ -25,7 +25,10 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss", "quill/dist/quill.snow.css"],
-            "scripts": []
+            "scripts": [
+              "./node_modules/flowbite/dist/flowbite.js",
+              "./node_modules/preline/dist/preline.js"
+            ]
           },
           "configurations": {
             "production": {
