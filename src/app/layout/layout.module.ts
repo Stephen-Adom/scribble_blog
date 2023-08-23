@@ -8,15 +8,9 @@ import { LayoutComponent } from './layout.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from '../home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { ProfileSidebarComponent } from './profile-sidebar/profile-sidebar.component';
 
 @NgModule({
-  declarations: [
-    LayoutComponent,
-    NavigationComponent,
-    SidebarComponent,
-    ProfileSidebarComponent,
-  ],
+  declarations: [LayoutComponent, NavigationComponent, SidebarComponent],
   imports: [CommonModule, LayoutRoutingModule, HomeComponent, SidebarModule],
 })
 export class LayoutModule {}
