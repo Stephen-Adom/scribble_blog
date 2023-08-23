@@ -118,33 +118,62 @@
         ></div>
 
         <div
-          class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] hs-dropdown-open:opacity-100 opacity-0 w-72 hidden z-10 mt-2 min-w-[15rem] bg-white shadow-md rounded-lg p-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
+          class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] hs-dropdown-open:opacity-100 opacity-0 w-72 hidden z-10 mt-2 min-w-[25rem] bg-white shadow-md rounded-lg p-2"
           aria-labelledby="hs-dropdown-default"
         >
-          <a
-            class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-            href="#"
-          >
-            Newsletter
-          </a>
-          <a
-            class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-            href="#"
-          >
-            Purchases
-          </a>
-          <a
-            class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-            href="#"
-          >
-            Downloads
-          </a>
-          <a
-            class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-            href="#"
-          >
-            Team Account
-          </a>
+          <div class="flex items-center justify-between">
+            <div class="flex-shrink-0 group block">
+              <div class="flex items-center">
+                <img
+                  class="inline-block flex-shrink-0 h-[3.875rem] w-[3.875rem] rounded-full"
+                  src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+                  alt="Image Description"
+                />
+                <div class="ml-3">
+                  <h3 class="font-semibold text-gray-800 dark:text-white">
+                    Maria Wanner
+                  </h3>
+                  <p class="text-sm font-medium text-gray-400">
+                    maria@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <span class="text-gray-500 italic text-sm block"
+                >28 followers</span
+              >
+              <small class="block text-sm text-gray-400">@maria</small>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-x-2">
+            <button
+              type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Full Profile
+            </button>
+
+            <button
+              type="button"
+              class="text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"
+            >
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  d="M3 7H1a1 1 0 0 0-1 1v8a2 2 0 0 0 4 0V8a1 1 0 0 0-1-1Zm12.954 0H12l1.558-4.5a1.778 1.778 0 0 0-3.331-1.06A24.859 24.859 0 0 1 6 6.8v9.586h.114C8.223 16.969 11.015 18 13.6 18c1.4 0 1.592-.526 1.88-1.317l2.354-7A2 2 0 0 0 15.954 7Z"
+                />
+              </svg>
+              <span class="sr-only">Icon description</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
